@@ -65,7 +65,7 @@ public class ActivityHostedRouter extends Router {
     @Override
     public final void invalidateOptionsMenu() {
         if (lifecycleHandler != null && lifecycleHandler.getFragmentManager() != null) {
-            lifecycleHandler.getFragmentManager().invalidateOptionsMenu();
+            lifecycleHandler.getActivity().invalidateOptionsMenu();
         }
     }
 

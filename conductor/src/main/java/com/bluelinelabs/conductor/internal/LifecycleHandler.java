@@ -56,7 +56,7 @@ public class LifecycleHandler extends Fragment implements ActivityLifecycleCallb
     }
 
     @Nullable
-    private static LifecycleHandler findInActivity(@NonNull Activity activity) {
+    private static LifecycleHandler findInActivity(@NonNull FragmentActivity activity) {
         LifecycleHandler lifecycleHandler = activeLifecycleHandlers.get(activity);
         if (lifecycleHandler == null) {
             lifecycleHandler = (LifecycleHandler)activity.getSupportFragmentManager().findFragmentByTag(FRAGMENT_TAG);
