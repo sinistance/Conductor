@@ -1,3 +1,9 @@
-<manifest package="com.bluelinelabs.conductor.support">
-    <application />
+<manifest package="com.bluelinelabs.conductor.support"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <meta-data
+            android:name="com.bluelinelabs.conductor.LifecycleHandlerProvider"
+            android:value="com.bluelinelabs.conductor.support.SupportFragmentLifecycleHandlerProvider"
+            />
+    </application>
 </manifest>
